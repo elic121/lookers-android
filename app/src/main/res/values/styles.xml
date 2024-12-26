@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="RoundedProfileImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Material3.Corner.Medium" parent="">
+        <item name="cornerSize">12dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <dimen name="drawer_handle_width">40dp</dimen>
+    <dimen name="drawer_handle_height">4dp</dimen>
+    <dimen name="drawer_handle_touch_height">24dp</dimen>
+    <dimen name="drawer_handle_corner_radius">2dp</dimen>
+    <dimen name="drawer_handle_bottom_margin">8dp</dimen>
+</resources>

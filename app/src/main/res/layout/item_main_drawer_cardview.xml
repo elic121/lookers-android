@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/md_theme_secondary"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_drawer_profile_image"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_lookers"
+            app:shapeAppearanceOverlay="@style/RoundedProfileImageView" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_drawer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0.9"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Drawer Name"
+            android:textColor="@android:color/white"
+            android:textSize="21sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_drawer_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:alpha="0.85"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="2개 보유"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

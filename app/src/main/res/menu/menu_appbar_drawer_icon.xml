@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_change_name"
+        android:title="이름 변경"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_change_color"
+        android:title="배경 색상 변경"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_change_image"
+        android:title="프로필 이미지 변경"
+        app:showAsAction="never" />
+</menu>

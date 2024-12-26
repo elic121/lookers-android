@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    app:strokeWidth="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="4dp"
+        android:padding="16dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_drawer_unit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drawer Unit Name"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_info_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="주요 태그"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_drawer_unit_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:alpha="0.75"
+            android:text="없음"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_info_desc" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_center_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.30" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical_center_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.70" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_horizontal_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <ImageView
+            android:id="@+id/icon_count"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.8"
+            android:background="@drawable/shape_circle_background"
+            android:contentDescription="count"
+            android:padding="8dp"
+            android:src="@drawable/ic_floor_layer"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_center_first"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal_center" />
+
+        <ImageView
+            android:id="@+id/icon_time"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.8"
+            android:background="@drawable/shape_circle_background"
+            android:contentDescription="time"
+            android:padding="12dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/ic_clock_five"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_center_second"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_center_first"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal_center" />
+
+        <ImageView
+            android:id="@+id/icon_volume"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="8dp"
+            android:alpha="0.8"
+            android:background="@drawable/shape_circle_background"
+            android:contentDescription="volume"
+            android:padding="12dp"
+            android:paddingHorizontal="10dp"
+            android:src="@drawable/ic_boxes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vertical_center_second"
+            app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal_center" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:alpha="0.6"
+            android:text="등록된 물품"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_center_first"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon_count" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_drawer_unit_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="0개"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_center_first"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_count" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:alpha="0.6"
+            android:text="마지막 업데이트"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_center_second"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_center_first"
+            app:layout_constraintTop_toBottomOf="@+id/icon_time" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_drawer_unit_last_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="없음"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@id/guideline_vertical_center_second"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_center_first"
+            app:layout_constraintTop_toBottomOf="@id/tv_time" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:alpha="0.6"
+            android:text="종류"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_center_second"
+            app:layout_constraintTop_toBottomOf="@+id/icon_volume" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_drawer_unit_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="2개"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical_center_second"
+            app:layout_constraintTop_toBottomOf="@id/tv_volume" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
